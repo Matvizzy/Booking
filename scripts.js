@@ -1,22 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var dropbtn = document.querySelector('.dropbtn');
-    var dropdownContent = document.querySelector('.dropdown-content');
+document.addEventListener('DOMContentLoaded', (event) => {
+    var checkin = document.getElementById('checkin');
+    var checkout = document.getElementById('checkout');
 
-    // Показать выпадающее меню при наведении
-    dropbtn.addEventListener('mouseover', function() {
-        dropdownContent.style.display = 'block';
-        setTimeout(function() {
-            dropdownContent.style.opacity = '1';
-            dropdownContent.style.visibility = 'visible';
-        }, 10); // Задержка для плавного появления
-    });
+    // Установить минимальную дату на сегодня
+    var today = new Date().toISOString().split('T')[0];
+    checkin.setAttribute('min', today);
+    checkout.setAttribute('min', today);
 
-    // Скрыть выпадающее меню при уходе курсора
-    dropbtn.addEventListener('mouseout', function() {
-        dropdownContent.style.opacity = '0';
-        setTimeout(function() {
-            dropdownContent.style.display = 'none';
-            dropdownContent.style.visibility = 'hidden';
-        }, 300); // Задержка для плавного скрытия
+    checkin.addEventListener('change', function() {
+        var checkinDate = this.value;
+        checkout.value = checkinDate;
+        checkout.setAttribute('min', checkinDate); // Установить минимальную дату для выезда
     });
 });

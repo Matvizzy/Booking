@@ -50,18 +50,26 @@ header nav ul li a.booking-btn:hover {
 }
 
 header nav ul li .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Плавный переход для opacity и visibility */
 }
 
 header nav ul li .dropdown-content a {
     padding: 1em;
     text-align: left;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 section {
