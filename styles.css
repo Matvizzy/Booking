@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul.menu {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+    transition: color 0.3s; /* Плавный переход цвета текста */
+}
+
+header nav ul li a:hover {
+    color: gray; /* Цвет текста при наведении */
+}
+
+header nav ul li a.booking-btn {
+    background-color: red;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+header nav ul li a.booking-btn:hover {
+    background-color: darkred;
+}
+
+header nav ul li .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+header nav ul li .dropdown-content a {
+    padding: 1em;
+    text-align: left;
+}
+
+section {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+.room {
+    margin-bottom: 2em;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input, form select {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

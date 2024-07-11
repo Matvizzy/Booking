@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование Отеля</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш отель</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#about" class="dropbtn">Об отеле</a>
+                    <div class="dropdown-content">
+                        <a href="#rooms">Номера и цены</a>
+                        <a href="#children">Отдых с детьми</a>
+                        <a href="#services">Услуги и инфраструктура</a>
+                        <a href="#restaurant">Ресторан</a>
+                        <a href="#activities">Активный отдых</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#booking" class="booking-btn">Бронирование</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>О нас</h2>
+        <p>Наш отель предлагает лучшие услуги и удобства для комфортного пребывания.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Наши номера</h2>
+        <div class="room">
+            <h3>Стандартный номер</h3>
+            <p>Цена: 100$ за ночь</p>
+            <p>Описание: Уютный номер с основными удобствами.</p>
+        </div>
+        <div class="room">
+            <h3>Люкс</h3>
+            <p>Цена: 200$ за ночь</p>
+            <p>Описание: Просторный номер с роскошными удобствами.</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Забронировать номер</h2>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Дата заезда:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Дата выезда:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type">Тип номера:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="standard">Стандартный номер</option>
+                <option value="deluxe">Люкс</option>
+            </select>
+
+            <input type="submit" value="Забронировать">
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Электронная почта: contact@ourhotel.com</p>
+        <p>Телефон: +1 234 567 890</p>
+        <p>Адрес: 123 Hotel St, City, Country</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Наш отель. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
