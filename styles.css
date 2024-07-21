@@ -124,3 +124,29 @@ footer {
     bottom: 0;
     width: 100%;
 }
+#voiceAssistantBtn, #backToHomeBtn {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#voiceAssistantBtn:hover, #backToHomeBtn:hover {
+    background-color: #e64a19;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+#voiceAssistantBtn {
+    right: 180px; 
+}
+
+#backToHomeBtn {
+    left: 20px;
+}
