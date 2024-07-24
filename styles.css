@@ -34,6 +34,33 @@ header nav ul li a {
     display: block;
     transition: color 0.3s; /* Плавный переход цвета текста */
 }
+.hotels {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.hotel {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Устанавливаем ширину отелей для размещения бок о бок */
+    text-align: center;
+}
+.hotel img {
+    width: 600px;
+    height: 400px;
+    max-height: 400px; /* Увеличение высоты изображений */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hotel h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
 
 header nav ul li a:hover {
     color: gray; /* Цвет текста при наведении */
@@ -144,7 +171,7 @@ footer {
     transform: scale(1.1);
 }
 #voiceAssistantBtn {
-    right: 180px; 
+    right: 20px; 
 }
 
 #backToHomeBtn {

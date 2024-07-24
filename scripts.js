@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (command.includes('открыть главную страницу') || command.includes('перейти на главную')) {
                     console.log('Команда распознана: переходим на главную страницу');
                     window.location.href = 'index.html';
-                } else if (command.includes('открыть новую страницу') || command.includes('перейти на новую страницу')) {
+                } else if (command.includes('акции') || command.includes('акции')) {
                     console.log('Команда распознана: переходим на новую страницу');
                     window.location.href = 'newpage.html';
                 } else {
