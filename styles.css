@@ -119,7 +119,9 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+.contact {
+    margin-bottom: 5%;
+}
 form label {
     margin-bottom: 0.5em;
 }
@@ -150,6 +152,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    min-height: 1px;
 }
 #voiceAssistantBtn, #backToHomeBtn {
     position: fixed;

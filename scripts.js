@@ -76,17 +76,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 var command = event.results[0][0].transcript.toLowerCase();
                 console.log('Распознано: ' + command);
 
-                if (command.includes('открыть главную страницу') || command.includes('перейти на главную')) {
+                if (command.includes('главную') || command.includes('главную')) {
                     console.log('Команда распознана: переходим на главную страницу');
                     window.location.href = 'index.html';
                 } else if (command.includes('акции') || command.includes('акции')) {
                     console.log('Команда распознана: переходим на новую страницу');
                     window.location.href = 'newpage.html';
+                } else if (command.includes('скидки') || command.includes('скидки')) {
+                    console.log('Команда распознана: переходим на новую страницу');
+                    window.location.href = 'newpage.html';
                 } else {
                     console.log('Команда не распознана');
                 }
+                
             };
-
+            
             recognition.onspeechend = function() {
                 console.log('Распознавание речи завершено');
                 recognition.stop();
